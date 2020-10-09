@@ -1,0 +1,24 @@
+body {
+    color: white;
+    background-color: black;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+p {
+    text-align: left;
+}
+
+a {
+    color: wheat;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}

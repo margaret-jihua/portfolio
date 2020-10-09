@@ -1,31 +1,37 @@
 import React from 'react';
-import './App.css';
+// import './style.css';
 
-import {
-  BrowserRouter as Router,
-  Route,
-  Link
-}from 'react-router-dom'
+import { BrowserRouter as Router, Route, Link }from 'react-router-dom'
 
-import Home from './Home'
-import Blog from './Blog'
-import About from './About'
-import Projects from './Projects'
+import Nav from './components/Nav'
+import Home from './components/Home'
+import Blog from './components/Blog'
+import About from './components/About'
+import Projects from './components/Projects'
+import Weather from './Weather'
 
 function App() {
+
+  const projects = [
+    {name:'Tik Tak Toe', link:"https://margaret-jihua.github.io/tik-tak-toe/"},
+    {name:'The Flag Game', link:"https://margaret-jihua.github.io/national-flag-game/"},
+    {name:'The Astronomy App', link: "https://astronomy-picture-app.herokuapp.com/"},
+    {name: 'Affirmation', link: "https://affirmations-client.herokuapp.com/"}
+  ]
+
+  const posts = [
+    {title: 'GA Software Engineering Immersive'}
+  ]
+
   return (
     <Router>
       <div className="App">
-        <nav>
-          <Link to='/'>Home</Link>{'  '}
-          <Link to='/blog'>Blog</Link>{'  '}
-          <Link to='/about'>About</Link>{'  '}
-          <Link to='/projects'>Projects</Link>{'  '}
-        </nav>
+        <Nav />        
         <Route exact path='/' component={Home} />
-        <Route path='/blog' component={Blog} />
+        <Route path='/blog' render={ () => <Blog posts={this.props.posts} /> }/>
         <Route path='/about' component={About} />
-        <Route path='/projects' component={Projects} />
+        <Route path='/projects' render={() => <Projects projects={projects} />} />
+        <Route path='/weather' render={() => <Weather /> }/>
       </div>
     </Router>
     
