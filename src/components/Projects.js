@@ -7,7 +7,7 @@ class Projects extends Component {
             return <li><a href={p.link}>{p.name}</a></li>
         })
         return (
-            <div>
+            <div id="projects">
                 <h1>My Projects</h1>
                 <ul>
                     {projectList}
