@@ -16,7 +16,7 @@ export default class Home extends Component {
 
         return (
             <div className="container">
-                <h1>Margaret's Portfolio</h1>   
+                <h1 className="text-center">Margaret's Portfolio</h1>   
                 <About />
                 <Projects id="projects" projects={projects} />
             </div>
