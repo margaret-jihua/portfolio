@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
 
-class Projects extends Component {
+export default class Projects extends Component {
     render() {
         const projectList = this.props.projects.map((p,i) => {
             return (
-                <div class="card col-sm-12 col-md-6 col-lg-4 ">
+                <div class="card col-sm-12 col-md-6 col-lg-4">
                     <div class="card-body">
                         <h5 class="card-title">{p.name}</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -16,8 +16,8 @@ class Projects extends Component {
             )
         })
         return (
-            <div id="projects">
-                <h1>My Projects</h1>
+            <div id="projects" className="container">
+                <h1 className="heading">My Projects</h1>
                 <div className="row">
                     {projectList}
                 </div>                
@@ -26,4 +26,3 @@ class Projects extends Component {
     }
 }
 
-export default Projects
