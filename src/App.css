@@ -2,6 +2,24 @@
   text-align: center;
   font-family: sans-serif;
 }
+
+.intro {
+  background: url(./assets/margaret-2.JPG) no-repeat right ;
+  background-size: cover;
+  height: 600px;
+  color: whitesmoke;
+  text-shadow: darkolivegreen 1px 1px;
+  text-align: justify;
+  padding: 19% 10%;
+}
+.intro a {
+  /* border: solid darkgreen 2px; */
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: darkolivegreen;
+  background-color: rgba(194, 247, 203, 0.7);
+}
+
 /* 
 .App-logo {
   height: 40vmin;
