@@ -18,14 +18,14 @@
 
 .bar a {
   color: whitesmoke;
-  font-size: large;
+  font-size: 1.5rem;
   font-weight: 600;
   text-shadow: 2px 1px 3px  olive;
 }
 
 .bar a:hover {
   text-decoration: none;
-  font-size: xx-large;
+  font-size: 2.5rem;
 }
 
 .intro {
