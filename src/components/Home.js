@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import About from '../components/About'
 import Projects from '../components/Projects'
 import Contact from '../components/Contact'
-import margaret from '../assets/margaret.JPG'
+import margaret from '../assets/Jihua(Margaret)Huang.pdf'
 
 export default class Home extends Component {
     
@@ -23,6 +23,7 @@ export default class Home extends Component {
                 <h5>Hi, My name is <strong style={{ fontSize:"3rem"}}>Jihua Huang</strong>, I'm also <strong style={{ fontSize:"3rem"}}>Margaret.</strong></h5>
                 <h1>I build things for the web.</h1>
                 <a href="mailto: margaret.jihua@gmail.com">Hire Me</a>
+                <a href={margaret} download>Resume</a>
             </div>    
             <About />
             <Projects id="projects" projects={projects} />
