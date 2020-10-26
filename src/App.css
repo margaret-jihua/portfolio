@@ -8,6 +8,26 @@
   margin: 40px;
 }
 
+.bar {
+  position: fixed;
+  top: 50%;  
+  right: 0;  
+  text-align: center;
+  margin: 15px;
+}
+
+.bar a {
+  color: whitesmoke;
+  font-size: large;
+  font-weight: 600;
+  text-shadow: 2px 1px 3px  olive;
+}
+
+.bar a:hover {
+  text-decoration: none;
+  font-size: xx-large;
+}
+
 .intro {
   background: url(./assets/margaret-2.JPG) no-repeat right ;
   background-size: cover;
