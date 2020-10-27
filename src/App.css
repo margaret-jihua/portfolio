@@ -1,5 +1,4 @@
 .App {
-  /* text-align: center; */
   font-family: sans-serif;
 }
 
@@ -61,11 +60,16 @@
 }
 
 .about-me a {
-  /* color: aqua; */
   font-weight: 600;
   background: -webkit-linear-gradient(45deg, violet, aqua);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+#skills {
+  background-color: whitesmoke;
+  padding: 30px;
+  margin-top: 40px;
 }
 
 /* 

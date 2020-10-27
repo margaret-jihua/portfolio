@@ -8,6 +8,8 @@ export default class Contact extends Component {
         return (
             <div id="contact" className="container text-center">
                 <h1 className="heading">Let's get in touch</h1>
+                <div className="line"></div>
+
                 <h4>✨😺come check out my cats😸✨</h4>
                 <img src={lucas} height="48" />
                 <img src={lily} alt="Lily" height="48" />
