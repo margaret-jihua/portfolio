@@ -50,13 +50,17 @@
 .line {
   background: linear-gradient(to right,orange,yellow,lightgreen,powderblue,violet);
   display: block;
-  width: 250px;
+  width: 290px;
   height: 5px;
   margin: auto auto 40px;
 }
 
 .about-me {
   margin: auto;
+}
+
+.about-me strong {
+  color: rgb(49, 70, 187);
 }
 
 .about-me a {
@@ -66,10 +70,38 @@
   -webkit-text-fill-color: transparent;
 }
 
-#skills {
+.smoke-dev {
   background-color: whitesmoke;
-  padding: 30px;
-  margin-top: 40px;
+  padding: 10px 0 50px;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.flex-dev {
+  display: flex;
+  justify-content: space-around;
+  margin: 100px auto;
+}
+
+#contact h6 {
+  font-weight: 600;
+}
+
+#contact a{
+  font-size: 1.2rem;
+  background: -webkit-linear-gradient(-45deg, skyblue, gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#contact h4 {
+  font-family: 'Cabin Sketch', cursive;
+  color: rgb(99, 99, 99);
+}
+
+footer {
+  font-family: 'Lato', sans-serif;
+  color: midnightblue;
 }
 
 /* 
