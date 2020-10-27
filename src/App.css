@@ -5,7 +5,7 @@
 
 .heading {
   text-align: center;
-  margin: 40px;
+  margin-top: 40px;
 }
 
 .bar {
@@ -48,7 +48,24 @@
   font-size: 1.2rem;
 }
 
+.line {
+  background: linear-gradient(to right,orange,yellow,lightgreen,powderblue,violet);
+  display: block;
+  width: 250px;
+  height: 5px;
+  margin: auto auto 40px;
+}
+
 .about-me {
+  margin: auto;
+}
+
+.about-me a {
+  /* color: aqua; */
+  font-weight: 600;
+  background: -webkit-linear-gradient(45deg, violet, aqua);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* 

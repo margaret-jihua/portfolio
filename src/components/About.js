@@ -5,6 +5,7 @@ export default class About extends Component {
         return (
             <div id="about" className="container">
                 <h1 className="heading">About Me</h1>
+                <div className="line"></div>
                 <div className="row">                    
                     <div className="LI-profile-badge col-sm-12 col-md-6 col-lg-4" data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="margaret-jihua"><a className="LI-simple-link" href='https://www.linkedin.com/in/margaret-jihua?trk=profile-badge'>Jihua (Margaret) Huang</a></div>
 
