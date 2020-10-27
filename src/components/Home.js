@@ -9,8 +9,8 @@ export default class Home extends Component {
     render() {
 
         const projects = [
-            {name:'Tik Tak Toe', link:"https://margaret-jihua.github.io/tik-tak-toe/",},
-            {name:'The Flag Game', link:"https://margaret-jihua.github.io/national-flag-game/"},
+            {name:'Bacon & Egg Tik Tak Toe', link:"https://margaret-jihua.github.io/tik-tak-toe/",},
+            {name:'The National Flag Game', link:"https://margaret-jihua.github.io/national-flag-game/"},
             {name:'The Astronomy App', link: "https://astronomy-picture-app.herokuapp.com/"},
             {name: 'Affirmation', link: "https://affirmations-client.herokuapp.com/"},
             {name: 'Off the shelf', link: "https://offtheshelff.herokuapp.com/"},
@@ -20,7 +20,7 @@ export default class Home extends Component {
         return (
             <>
             <div className="intro">
-                <h5>Hi, My name is <strong style={{ fontSize:"3rem"}}>Jihua Huang</strong>, I'm also <strong style={{ fontSize:"3rem"}}>Margaret.</strong></h5>
+                <h5>Hi, my name is <strong style={{ fontSize:"3rem"}}>Jihua Huang</strong>, I'm also <strong style={{ fontSize:"3rem"}}>Margaret.</strong></h5>
                 <h1>I build things for the web.</h1>
                 <a href="mailto: margaret.jihua@gmail.com">Hire Me</a>
                 <a href={margaret} download>Resume</a>

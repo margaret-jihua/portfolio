@@ -20,7 +20,7 @@
   color: whitesmoke;
   font-size: 1.5rem;
   font-weight: 600;
-  text-shadow: 2px 1px 3px  olive;
+  text-shadow: 2px 1px 3px  rgb(50, 63, 27);
 }
 
 .bar a:hover {
@@ -29,7 +29,7 @@
 }
 
 .intro {
-  background: url(./assets/margaret-2.JPG) no-repeat right ;
+  background: url(./assets/margaret.JPG) no-repeat right ;
   background-size: cover;
   height: 600px;
   color: whitesmoke;
@@ -37,14 +37,18 @@
   text-align: justify;
   padding: 19% 10%;
 }
+
 .intro a {
-  /* border: solid darkgreen 2px; */
   border-radius: 10px;
   padding: 10px 20px;
   color: darkolivegreen;
   background-color: rgba(194, 247, 203, 0.7);
-  margin: 20px;
+  margin: 10px 30px 0 0;
+  display: inline-block;
   font-size: 1.2rem;
+}
+
+.about-me {
 }
 
 /* 
