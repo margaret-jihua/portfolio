@@ -1,12 +1,12 @@
 import React from 'react'
-import { NavLink, Link } from 'react-router-dom';
 
 export default function Nav(props) {
     return (
-        <nav class="bar d-flex flex-column">
-            <a class="" href="#about">About</a>
-            <a class="" href="#project">Project</a>
-            <a class="" href="#contact">Contact</a>
+        <nav className="bar d-flex flex-column">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
         // <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-end">
         //     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,10 +27,3 @@ export default function Nav(props) {
         // </nav>
     )
 }
-{/* <nav>
-          <Link to='/'>Home</Link>{'  '}
-          <Link to='/blog'>Blog</Link>{'  '}
-          <Link to='/about'>About</Link>{'  '}
-          <Link to='/projects'>Projects</Link>{'  '}
-          <Link to='/weather'>Weather</Link>
-        </nav> */}

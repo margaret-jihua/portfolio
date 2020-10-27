@@ -28,7 +28,7 @@ export default class About extends Component {
         })
 
         return (
-            <div id="skills">
+            <div id="skills" className="smoke-dev">
                 <h1 className="heading">Technical Skills</h1>
                 <div className="line"></div>
                 <div className="row container mx-auto">{skillList}</div>                
