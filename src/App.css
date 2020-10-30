@@ -85,6 +85,12 @@
   margin: 100px auto;
 }
 
+/* @media.flex-dev */
+
+.project {
+  margin: 0px;
+}
+
 #contact h6 {
   font-weight: 600;
 }
