@@ -1,4 +1,6 @@
 import React, {Component} from 'react'
+import Typing from 'react-typing-animation'
+
 import About from '../components/About'
 import Skills from '../components/Skills'
 import Projects from '../components/Projects'
@@ -64,9 +66,9 @@ export default class Home extends Component {
 
         return (
             <>
-            <div className="intro">
+            <div className="intro">                
                 <h5>Hi, my name is <strong style={{ fontSize:"3rem"}}>Jihua Huang</strong>, I'm also <strong style={{ fontSize:"3rem"}}>Margaret.</strong></h5>
-                <h1>I build things for the web.</h1>
+                <Typing speed={100}><h1>I build things for the web.</h1></Typing>
                 <a href="mailto: margaret.jihua@gmail.com">Hire Me</a>
                 <a href={margaret} download>Resume</a>
             </div>    

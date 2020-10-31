@@ -61,8 +61,8 @@ export default class Projects extends Component {
                     </div>
                     <p style={{height:"120px"}}>{p.description}</p>
                     <div className="d-flex">
-                        <a href={p.link}><img src={site} /></a>
-                        <a href={p.repo}><img src={github} /></a>
+                        <a href={p.link}><img src={site} alt="web"/></a>
+                        <a href={p.repo}><img src={github} alt="github"/></a>
                     </div>
                 </div>
                 )
@@ -83,8 +83,8 @@ export default class Projects extends Component {
                         <div>
                             <h5>{p.name}</h5>
                             <p>{p.description}</p>
-                            <a href={p.link}><img src={site} /></a>
-                            <a href={p.repo}><img src={github} /></a>
+                            <a href={p.link}><img src={site} alt="web"/></a>
+                            <a href={p.repo}><img src={github} alt="github"/></a>
                         </div>
                     </div>
                 </div>

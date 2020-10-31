@@ -9,8 +9,6 @@ export default class About extends Component {
                 <div className="row">                    
                     <div className="LI-profile-badge col-sm-12 col-md-6 col-lg-4" data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="margaret-jihua"><a className="LI-simple-link" href='https://www.linkedin.com/in/margaret-jihua?trk=profile-badge'>Jihua (Margaret) Huang</a></div>
 
-                    {/* <div className="github-widget col-sm-12 col-md-6 col-lg-4" style={{height:"408px"}} data-username="margaret-jihua"></div> */}
-
                     <div className="col-sm-12 col-md-6 col-lg-8 about-me">
                         <h5>I’m a Junior Software Engineer. I like building awesome software. </h5>
                         <br />
