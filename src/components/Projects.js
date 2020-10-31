@@ -59,7 +59,7 @@ export default class Projects extends Component {
                     <div className="text-muted d-flex flex-wrap">
                         {p.tech ? (p.tech.map((t, i) => <span style={{marginRight:"10px"}}>{t}</span>)) : ('')}
                     </div>
-                    <p style={{height:"120px"}}>{p.description}</p>
+                    <p>{p.description}</p>
                     <div className="d-flex">
                         <a href={p.link}><img src={site} alt="web"/></a>
                         <a href={p.repo}><img src={github} alt="github"/></a>

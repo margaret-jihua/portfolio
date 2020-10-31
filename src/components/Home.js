@@ -67,8 +67,8 @@ export default class Home extends Component {
         return (
             <>
             <div className="intro">                
-                <h5>Hi, my name is <strong style={{ fontSize:"3rem"}}>Jihua Huang</strong>, I'm also <strong style={{ fontSize:"3rem"}}>Margaret.</strong></h5>
-                <Typing speed={100}><h1>I build things for the web.</h1></Typing>
+                <h5>Hi, my name is <strong>Jihua Huang</strong>, I'm also <strong>Margaret.</strong></h5>
+                <Typing speed={100}><h2>I build things for the web.</h2></Typing>
                 <a href="mailto: margaret.jihua@gmail.com">Hire Me</a>
                 <a href={margaret} download>Resume</a>
             </div>    

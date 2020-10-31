@@ -35,8 +35,11 @@
   height: 600px;
   color: whitesmoke;
   text-shadow: darkolivegreen 1px 1px;
-  text-align: justify;
-  padding: 19% 10%;
+  padding: 19% 10% 0;
+}
+
+.intro strong {
+  font-size: 3rem;
 }
 
 .intro a {
@@ -89,7 +92,7 @@
 
 .project-img {
   height: 270px;
-  width: 540px;
+  /* width: 540px; */
   object-fit: scale-down;
   margin-bottom: 15px;
 }
@@ -138,4 +141,25 @@
 footer {
   font-family: 'Lato', sans-serif;
   color: midnightblue;
+}
+
+@media screen and (max-width: 1024px) {
+  .bar {
+    visibility: hidden;
+  }
+
+  .intro {
+    background: url(./assets/margaret.JPG) no-repeat;
+    background-size: cover;
+    padding: 40% 10% 0;
+  }
+
+  .intro strong {
+    font-size: 2rem;
+  }
+  
+  .game-img {
+    height: 100px;
+    width: 100px;
+  }
 }
