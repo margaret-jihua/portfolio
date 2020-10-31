@@ -98,11 +98,24 @@
   cursor: pointer;
 }
 
-.view {
-  width: 80px;
-  position: relative;
-  bottom: 145px;
-  margin: auto;
+.sub-heading{
+  margin: 40px 0;
+  font-weight: 800;
+  /* text-shadow: darkorchid 1px 1px; */
+  background: -webkit-linear-gradient(  gold, salmon,pink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.game-img {
+  height: 130px;
+  width: 130px;
+  margin-right: 15px;
+}
+
+.game-img:hover {
+  opacity: 0.6;
+  cursor: pointer;
 }
 
 #contact h6 {

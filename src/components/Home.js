@@ -46,6 +46,7 @@ export default class Home extends Component {
             },
             {
                 game: true,
+                img: "BaconEgg",
                 name: "Bacon & Egg Tik Tak Toe", 
                 link: "https://margaret-jihua.github.io/tik-tak-toe/",
                 repo: "https://github.com/margaret-jihua/tik-tak-toe",
@@ -53,6 +54,7 @@ export default class Home extends Component {
             },
             {
                 game: true,
+                img: "globe",
                 name: "The National Flag Game", 
                 link: "https://margaret-jihua.github.io/national-flag-game/",
                 repo: "https://github.com/margaret-jihua/national-flag-game",

@@ -7,6 +7,11 @@ import Astronomy from '../assets/projects/Astronomy.png'
 import OffTheShelf from '../assets/projects/off-the-shelf.png'
 import ZeroG from '../assets/projects/Zero-G.png'
 
+import BaconEgg from '../assets/projects/bacon-egg.png'
+import TikTakToe from '../assets/projects/Bacon-Egg-Tik-Tak-Toe.png'
+import globe from '../assets/projects/world_flags_globe.gif'
+import flagGame from '../assets/projects/world-flag-game.png'
+
 export default class Projects extends Component {
     state = {
         modalImg: '',
@@ -24,11 +29,20 @@ export default class Projects extends Component {
                     return OffTheShelf
                 case 'ZeroG':
                     return ZeroG
+                case 'BaconEgg':
+                    return BaconEgg
+                case 'globe':
+                    return globe
             }
         }
 
-        const handleModal = (img) => {
-            this.setState({ modalImg: img })
+        const getModal = (img) => {
+            switch (img) {
+                case 'BaconEgg':
+                    return TikTakToe
+                case 'globe':
+                    return flagGame
+            }
         }
 
         const projectList = this.props.projects.map((p,i) => {           
@@ -58,16 +72,20 @@ export default class Projects extends Component {
         const games = this.props.projects.map((p,i) => {           
             return (
                 p.game ? (
-                <div className="d-flex flex-wrap">
-                    <div className="">
-                        <img className="" src={getImg(p.img)} alt={p.img} style={{height:"270px", width:"", objectFit:"scale-down", marginBottom:"20px"}}/> 
-                        <h5 className="">{p.name}</h5>
-                        <div className="text-muted d-flex flex-wrap">
-                            {p.tech ? (p.tech.map((t, i) => <span style={{marginRight:"10px"}}>{t}</span>)) : ('')}
+                <div className="col-sm-6">
+                    <div className="d-flex">
+                        <img className="game-img" src={getImg(p.img)} alt={p.img} data-toggle="modal" data-target={'#'+p.img}/> 
+                        <div class="modal fade" id={p.img} tabindex="-1"  aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                <img src={getModal(p.img)} alt={p.img} style={{height:"30vw", margin:"auto"}}/>
+                            </div>
                         </div>
-                        <p className="">{p.description}</p>
-                        <a href={p.link} className=""><img src={site} /></a>
-                        <a href={p.repo} className=""><img src={github} /></a>
+                        <div>
+                            <h5>{p.name}</h5>
+                            <p>{p.description}</p>
+                            <a href={p.link}><img src={site} /></a>
+                            <a href={p.repo}><img src={github} /></a>
+                        </div>
                     </div>
                 </div>
                 ) : ('')
@@ -80,7 +98,11 @@ export default class Projects extends Component {
                 <div className="line"></div>
                 <div className="row">
                     {projectList}
-                </div>                
+                </div> 
+                <h4 className="sub-heading">❖ some simple games build with pure HTML & CSS</h4>
+                <div className="row"> 
+                    {games}   
+                </div>      
             </div>
         )
     }
