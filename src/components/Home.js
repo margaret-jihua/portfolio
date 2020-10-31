@@ -37,7 +37,7 @@ export default class Home extends Component {
                 description: "A fitness app for future-space-travelers. In case of muscular density decreases in space, it is crucial to maintain exercise. Our app offers timer with music while users log their daily acitiveties. It's a not fully functional site, we listed possible implementations for the future."
             },
             {
-                name: "Off the shelf", 
+                name: "Off The Shelf", 
                 img: "OffTheShelf",
                 link: "https://offtheshelff.herokuapp.com/",
                 repo: "https://github.com/margaret-jihua/Off-the-Shelf",

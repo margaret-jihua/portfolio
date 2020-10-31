@@ -87,8 +87,22 @@
 
 /* @media.flex-dev */
 
-.project {
-  margin: 0px;
+.project-img {
+  height: 270px;
+  width: 540px;
+  object-fit: scale-down;
+}
+
+.project-img:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.view {
+  width: 80px;
+  position: relative;
+  bottom: 145px;
+  margin: auto;
 }
 
 #contact h6 {

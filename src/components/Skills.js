@@ -17,7 +17,7 @@ export default class About extends Component {
           
         const images = importAll(require.context('../assets/skills', false, /\.(png|jpe?g|svg)$/));
 
-        console.log(skills);
+        // console.log(skills);
         const skillList = skills.map((skill,i) => {
             return (
                 <div className="col-md-2">

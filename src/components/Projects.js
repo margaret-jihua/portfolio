@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, {Component, useState} from 'react'
 import github from '../assets/icons8-github-48.png'
 import site from '../assets/icons8-internet-48.png'
 
@@ -8,8 +8,12 @@ import OffTheShelf from '../assets/projects/off-the-shelf.png'
 import ZeroG from '../assets/projects/Zero-G.png'
 
 export default class Projects extends Component {
-    render() {
+    state = {
+        modalImg: '',
+    }
 
+    render() {
+        
         const getImg = (img) => {
             switch (img) {
                 case 'Affirmation':
@@ -23,22 +27,29 @@ export default class Projects extends Component {
             }
         }
 
+        const handleModal = (img) => {
+            this.setState({ modalImg: img })
+        }
+
         const projectList = this.props.projects.map((p,i) => {           
             return (
                 p.game ? ('') : (
-                <div className="col-sm-12 col-md-6" style={{padding:"20px"}}>
-                    {/* <div className=""> */}
-                        {/* <div className=""> */}
-                        <img src={getImg(p.img)} alt={p.img} style={{height:"270px", width:"540px", objectFit:"scale-down", marginBottom:"20px"}}/> 
-                        {/* </div> */}
-                        <h5 className="">{p.name}</h5>
-                        <div className="text-muted d-flex flex-wrap">
-                            {p.tech ? (p.tech.map((t, i) => <span style={{marginRight:"10px"}}>{t}</span>)) : ('')}
+                <div className="col-sm-12 col-md-6 card" style={{padding:"20px"}}>
+                    <img className="project-img" src={getImg(p.img)} alt={p.img}  data-toggle="modal" data-target={'#'+p.img}/>                     
+                    <div class="modal fade" id={p.img} tabindex="-1"  aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <img src={getImg(p.img)} alt={p.img} style={{height:"30vw", margin:"auto"}}/>
                         </div>
-                        <p className="">{p.description}</p>
-                        <a href={p.link} className="card-link"><img src={site} /></a>
-                        <a href={p.repo} className="card-link"><img src={github} /></a>
-                    {/* </div> */}
+                    </div>
+                    <h5>{p.name}</h5>
+                    <div className="text-muted d-flex flex-wrap">
+                        {p.tech ? (p.tech.map((t, i) => <span style={{marginRight:"10px"}}>{t}</span>)) : ('')}
+                    </div>
+                    <p style={{height:"120px"}}>{p.description}</p>
+                    <div className="d-flex">
+                        <a href={p.link}><img src={site} /></a>
+                        <a href={p.repo}><img src={github} /></a>
+                    </div>
                 </div>
                 )
             )
