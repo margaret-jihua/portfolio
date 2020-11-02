@@ -72,8 +72,8 @@ export default class Projects extends Component {
         const games = this.props.projects.map((p,i) => {           
             return (
                 p.game ? (
-                <div className="col-sm-6">
-                    <div className="d-flex">
+                <div className="col-12 col-sm-6">
+                    <div className="d-flex game">
                         <img className="game-img" src={getImg(p.img)} alt={p.img} data-toggle="modal" data-target={'#'+p.img}/> 
                         <div class="modal fade" id={p.img} tabindex="-1"  aria-hidden="true">
                             <div class="modal-dialog modal-xl modal-dialog-centered">

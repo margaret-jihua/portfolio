@@ -19,9 +19,9 @@ export default class About extends Component {
 
         const skillList = skills.map((skill,i) => {
             return (
-                <div className="col-md-2">
+                <div className="col-3 col-md-2">
                     <img src={skill['url']}/>
-                    <p>{skill['skill']}</p>
+                    <div>{skill['skill']}</div>
                 </div>
             )
         })

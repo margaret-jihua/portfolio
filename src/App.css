@@ -82,17 +82,9 @@
   text-align: center;
 }
 
-.flex-dev {
-  display: flex;
-  justify-content: space-around;
-  margin: 100px auto;
-}
-
-/* @media.flex-dev */
 
 .project-img {
   height: 270px;
-  /* width: 540px; */
   object-fit: scale-down;
   margin-bottom: 15px;
 }
@@ -105,7 +97,6 @@
 .sub-heading{
   margin: 40px 0;
   font-weight: 800;
-  /* text-shadow: darkorchid 1px 1px; */
   background: -webkit-linear-gradient(  gold, salmon,pink);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -122,6 +113,11 @@
   cursor: pointer;
 }
 
+.flex-dev {
+  display: flex;
+  justify-content: space-around;
+  margin: 100px auto;
+}
 #contact h6 {
   font-weight: 600;
 }
@@ -161,5 +157,45 @@ footer {
   .game-img {
     height: 100px;
     width: 100px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .intro {
+    padding: 95% 5% 0;
+  }
+
+  .intro h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: lavender;
+    font-style: italic;
+  }
+
+  .about-me {
+    padding: 0 8%;
+  }
+
+  .LI-profile-badge {
+    padding-left: 15%;
+    margin-bottom: 10%;
+  }
+
+  #skills img {
+    height: 40px;
+  }
+
+  .game-img {
+    height: 64px;
+    width: 64px;
+  }
+
+  .game {
+    margin-top: 30px;
+  }
+
+  .flex-dev {
+    display: block;
+    margin: 20px auto 40px;
   }
 }
