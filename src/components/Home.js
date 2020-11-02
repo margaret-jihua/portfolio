@@ -66,11 +66,13 @@ export default class Home extends Component {
 
         return (
             <>
-            <div className="intro">                
-                <h5>Hi, my name is <strong>Jihua Huang</strong>, I'm also <strong>Margaret.</strong></h5>
-                <h2><Typing speed={100}>I build things for the web.</Typing></h2>
-                <a href="mailto: margaret.jihua@gmail.com">Hire Me</a>
-                <a href={margaret} download>Resume</a>
+            <div className="intro">
+                <div className="intro-text">            
+                    <h5>Hi, my name is <strong>Jihua Huang</strong>, I'm also <strong>Margaret.</strong></h5>
+                    <h2><Typing speed={100}>I build things for the web.</Typing></h2>
+                    <a href="mailto: margaret.jihua@gmail.com">Hire Me</a>
+                    <a href={margaret} download>Resume</a>
+                </div>
             </div>    
             <About />
             <Skills />

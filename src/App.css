@@ -35,7 +35,12 @@
   height: 600px;
   color: whitesmoke;
   text-shadow: darkolivegreen 1px 1px;
-  padding: 19% 10% 0;
+}
+
+.intro-text {
+  position: relative;
+  top: 55%;
+  left: 10%;
 }
 
 .intro strong {
@@ -81,7 +86,6 @@
   margin-top: 70px;
   text-align: center;
 }
-
 
 .project-img {
   height: 270px;
@@ -147,7 +151,7 @@ footer {
   .intro {
     background: url(./assets/margaret.JPG) no-repeat;
     background-size: cover;
-    padding: 40% 10% 0;
+    /* padding: 40% 10% 0; */
   }
 
   .intro strong {
@@ -160,11 +164,8 @@ footer {
   }
 }
 
-@media screen and (max-width: 800px) {
-  .intro {
-    padding: 95% 5% 0;
-  }
-
+@media screen and (max-width: 760px) {
+  
   .intro h2 {
     font-size: 1.3rem;
     font-weight: 700;
