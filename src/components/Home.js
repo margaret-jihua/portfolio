@@ -20,7 +20,7 @@ export default class Home extends Component {
                 link: "https://astronomy-picture-app.herokuapp.com/",
                 repo: "https://github.com/margaret-jihua/Astronomy-App",
                 tech: ["Node.js", "Express", "PostgresQL", "RESTful API"],
-                description: "A web app displying amazing astronmy pictures of the day by NASA. Users can search pictures by date, create an account, favorite pictures, leave comments under each picture."
+                description: "A web app displaying amazing astronomy pictures of the day by NASA. Users can search pictures by date, create an account, favorite pictures, leave comments under each picture."
             },
             {
                 name: "Affirmation", 
@@ -44,7 +44,7 @@ export default class Home extends Component {
                 link: "https://offtheshelff.herokuapp.com/",
                 repo: "https://github.com/margaret-jihua/Off-the-Shelf",
                 tech: ["Django", "PostgresQL", "API"],
-                description: "A mockup Goodreads app. Allows Users to create an account, search for books, and receive information on similar books, ratings, reviews, purchase links and film base of the book if any. Users can also save books to their wishlist and leave comments under each book."
+                description: "A mock-up Goodreads app. Allows Users to create an account, search for books, and receive information on similar books, ratings, reviews, purchase links and film base of the book if any. Users can also save books to their wishlist and leave comments under each book."
             },
             {
                 game: true,
@@ -69,7 +69,7 @@ export default class Home extends Component {
             <div className="intro">
                 <div className="intro-text">            
                     <h5>Hi, my name is <strong>Jihua Huang</strong>, I'm also <strong>Margaret.</strong></h5>
-                    <h2><Typing speed={100}>I build things for the web.</Typing></h2>
+                    <h2><Typing speed={250}>I build things for the web.</Typing></h2>
                     <a href="mailto: margaret.jihua@gmail.com">Hire Me</a>
                     <a href={margaret} download>Resume</a>
                 </div>
